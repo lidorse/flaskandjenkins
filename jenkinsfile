@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+    
+    stages{
+        
+    
+     stage('cloning ...'){
+        steps{
+           git branch: 'main', url: 'https://github.com/devopsPRO27/flaskandjenkins.git'
+        }  
+        
+     }
+     
+     stage('build'){
+         steps{
+             sh 'echo building'
+         }
+     }
+     stage ('Testing'){
+         steps{
+             sh 'echo testing'
+         }
+     }
+     
+        
+    }
+}
