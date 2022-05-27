@@ -5,7 +5,7 @@ pipeline {
         stage('cloning ...'){
             steps{
                 sh 'rm -r flaskandjenkins'
-                sh 'git clone https://github.com/lidorse/flaskandjenkins.git'
+                sh 'git clone https://github.com/lidorse/flaskandjenkins'
             }
         }
         stage('build'){
